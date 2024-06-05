@@ -20,6 +20,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) =>{
         router.push(`/product/${data?.id}`);
     }
 
+    const onPreview()=>{
+        
+    }
+
     return(
         <div onClick={handleClick} className="
         bg-white group cursor-pointer rounded-xl
@@ -38,7 +42,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) =>{
                 ">
                     <div className="flex gap-x-6 justify-center">
                         <IconButton
-                            onClick={()=>{}}
+                            onClick={onPreview}
                             icon={<Expand size={20} className="text-gray-600"/>}
                         />
                         <IconButton
